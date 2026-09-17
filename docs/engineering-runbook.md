@@ -1,39 +1,22 @@
-﻿# Engineering Runbook
+# Research evidence runbook
 
-## Repository Profile
+This repository holds project proposals, reading notes and reporting templates.
+It is not a collection of completed benchmark results.
 
-- Repository: $repoName
-- Classification: Documentation/content repository
-- Tracked files: 26
-- Python files: 0
-- JavaScript/TypeScript files: 0
-- Notebooks: 0
-- Terraform files: 0
+## Prepare a project summary
 
-## Setup
+1. Open the relevant project in the [README](../README.md).
+2. Follow the [evidence requirements](EVIDENCE_REQUIREMENTS.md).
+3. Copy the [experiment record](../templates/experiment-record.json), record the
+   source commit, dataset split, command and environment, and keep status `planned`
+   until execution completes.
+4. Link measured artifacts and limitations from the project's one-pager.
 
-``bash
-No package install step is required for the tracked source.
-``
+```bash
+make verify
+python -m json.tool templates/experiment-record.json > /dev/null
+```
 
-## Verification
-
-``bash
-Review tracked content and run repository-specific checks.
-git status --short
-``
-
-## Release Hygiene
-
-- Keep generated outputs, caches, local datasets, virtual environments, and dependency folders out of git.
-- Prefer deterministic commands over manual notebook or console-only steps.
-- Document required secrets and environment variables instead of committing them.
-- Keep Dockerfiles, CI workflows, and tests aligned with the actual project stack.
-- Treat learning or reference material honestly as reference material; do not present it as production service code unless it has service-grade tests, deployment, and operations docs.
-
-## Maintenance Checklist
-
-- Review dependencies quarterly.
-- Run tests before every push.
-- Confirm git status --short is clean before packaging.
-- Include .git only when an external submission explicitly requires repository history.
+The first command checks whitespace; the second checks JSON syntax. Neither runs
+experiments or validates model quality. Run implementation tests and experiments
+inside each linked source repository using its documented environment.
