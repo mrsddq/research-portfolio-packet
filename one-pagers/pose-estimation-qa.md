@@ -1,5 +1,9 @@
 # Pose Estimation QA One-Pager
 
+Source: https://github.com/mrsddq/pose-estimation-qa
+
+Status: proposed benchmark study; measured results are not supplied in this packet. See the source repository for runnable implementation and test status.
+
 ## Problem
 
 Detect suspicious COCO-style pose annotations before training or evaluation.

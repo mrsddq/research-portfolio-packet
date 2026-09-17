@@ -1,5 +1,9 @@
 # YOLOv8 Detection One-Pager
 
+Source: https://github.com/mrsddq/yolov8-detection
+
+Status: proposed benchmark study; measured results are not supplied in this packet. See the source repository for runnable implementation and test status.
+
 ## Problem
 
 Detect street-scene objects using a focused three-class YOLOv8 setup.

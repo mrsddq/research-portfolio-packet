@@ -2,7 +2,7 @@
 
 Academic-style framing packet for AI, computer vision, MLOps, and DevOps portfolio work.
 
-This repository turns project repos into concise research artifacts: abstracts, one-page summaries, experiment cards, and publication-ready project descriptions. It does not claim peer-reviewed publications; it prepares the material needed to pitch, submit, or discuss projects clearly.
+This repository contains research proposals, reading notes, and experiment templates for the linked implementation repositories. It does not establish completed benchmark results or publication readiness. Source code, automated smoke tests, and measured dataset experiments are separate evidence categories.
 
 ## Structure
 
@@ -35,3 +35,14 @@ Use [docs/EVIDENCE_REQUIREMENTS.md](docs/EVIDENCE_REQUIREMENTS.md) before writin
 ## Current Status
 
 Research framing is ready. Real papers, posters, or submissions require actual experiment runs, figures, and reviewer-quality citations.
+
+The one-pagers describe intended studies. Their requested metrics remain pending
+until a run record includes the dataset/split, exact code revision, command,
+environment, output artifact and limitations. Use
+[the experiment record template](templates/experiment-record.json) and
+[the evidence requirements](docs/EVIDENCE_REQUIREMENTS.md). Passing a repository's
+offline tests proves the tested contracts; it does not substitute for medical,
+captioning, detection, OCR or robustness benchmark evaluation.
+
+`make verify` checks documentation whitespace only. This repository does not run
+the linked models; use each implementation's documented commands and CI.

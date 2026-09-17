@@ -1,5 +1,9 @@
 # ViT Robustness XAI One-Pager
 
+Source: https://github.com/mrsddq/vit-robustness-xai
+
+Status: proposed benchmark study; measured results are not supplied in this packet. See the source repository for runnable implementation and test status.
+
 ## Problem
 
 Evaluate Vision Transformer behavior under corruptions, subgroup splits, and explanation visualizations.
