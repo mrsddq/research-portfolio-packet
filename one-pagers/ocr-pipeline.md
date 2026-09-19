@@ -1,5 +1,9 @@
 # OCR Pipeline One-Pager
 
+Source: https://github.com/mrsddq/ocr-pipeline
+
+Status: proposed benchmark study; measured results are not supplied in this packet. See the source repository for runnable implementation and test status.
+
 ## Problem
 
 Extract text from noisy document images with a reproducible preprocessing, inference, and evaluation pipeline.

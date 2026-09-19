@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "planned",
+  "repository_url": null,
+  "commit_sha": null,
+  "dataset": {"name": null, "license": null, "split": null, "split_sha256": null},
+  "environment": {"python": null, "dependency_lock_sha256": null, "hardware": null},
+  "seed": null,
+  "training_command": null,
+  "evaluation_command": null,
+  "checkpoint_sha256": null,
+  "evaluation": {"sample_count": null, "failed_sample_count": null, "aggregation": null},
+  "metrics_artifact": {"path_or_url": null, "sha256": null},
+  "metrics": [],
+  "limitations": ["Template only: no benchmark run or measured result is represented."]
+}
